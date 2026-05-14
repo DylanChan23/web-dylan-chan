@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import { Pathway_Gothic_One } from "next/font/google";
 
 export const lore = localFont({
   src: [
@@ -27,95 +26,100 @@ export const lore = localFont({
   variable: "--font-lore",
 });
 
-export const mangoGrotesque = localFont({
+export const tusker = localFont({
   src: [
     {
-      path: "../../public/fonts/MangoGrotesque-Thin.woff2",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-ThinItalic.woff2",
-      weight: "100",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-ExtraLight.woff2",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-ExtLtIta.woff2",
-      weight: "200",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-Light.woff2",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-LightItalic.woff2",
-      weight: "300",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-Regular.woff2",
+      path: "../../public/fonts/TuskerGrotesk-2500Medium.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/MangoGrotesque-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-MediumItalic.woff2",
-      weight: "500",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-SemiBold.woff2",
+      path: "../../public/fonts/TuskerGrotesk-3600Semibold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../../public/fonts/MangoGrotesque-SemiBoldItalic.woff2",
-      weight: "600",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-Bold.woff2",
+      path: "../../public/fonts/TuskerGrotesk-6700Bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../../public/fonts/MangoGrotesque-BoldItalic.woff2",
-      weight: "700",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-ExtraBold.woff2",
+      path: "../../public/fonts/TuskerGrotesk-8800Super.ttf",
       weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-ExtBdIta.woff2",
-      weight: "800",
-      style: "italic",
-    },
-    {
-      path: "../../public/fonts/MangoGrotesque-Black.woff2",
-      weight: "900",
       style: "normal",
     },
   ],
-  variable: "--font-mango",
+  variable: "--font-tusker",
 });
 
-export const gothic = Pathway_Gothic_One({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-  variable: "--font-gothic",
+export const montreal = localFont({
+  src: [
+    {
+      path: "../../public/fonts/NeueMontreal-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-LightItalic.otf",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-Italic.otf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-MediumItalic.otf",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/NeueMontreal-BoldItalic.otf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-montreal",
+});
+
+export const migra = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Migra-Extralight.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/MigraItalic-ExtralightItalic.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/Migra-Extrabold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/MigraItalic-ExtraboldItalic.woff2",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-migra",
 });

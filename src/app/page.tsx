@@ -1,119 +1,62 @@
-import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
-import {
-  Card,
-  CardAction,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { lore } from "@/lib/fonts";
-import { mangoGrotesque } from "@/lib/fonts";
+import { tusker, lore } from "@/lib/fonts";
+import NeoCard from "@/components/_components/neo-card";
+import { Button } from "@/components/ui/button";
+import SendIcon from "@/components/icons/send-icon";
 
 export default function Home() {
   return (
-    <section>
-      <div className="w-full flex flex-col mt-20 py-20">
-        <div className="flex flex-col items-center">
-          <p className="text-3xl uppercase">Hey, I'm Dylan</p>
+    <section className="w-full min-h-screen">
+      <div className="w-full h-screen flex items-center justify-center bg-linear-to-b from-black-custom/0 from-50% to-black-custom/50">
+        <div className="flex w-full flex-col items-center">
           <p
-            className={`${mangoGrotesque.className} text-center text-[clamp(5rem,15vw,200rem)] text-red-600 font-bold uppercase`}
+            className={`${tusker.className} text-center text-[clamp(5rem,15vw,20rem)] font-semibold text-beige-custom uppercase`}
           >
             Frontend Developer
           </p>
           <p
-            className={`${lore.className} text-beige-custom text-center text-[clamp(1rem,7vw,20rem)] -translate-y-30 -rotate-2`}
+            className={`${lore.className} text-blue-800 text-center text-[clamp(1rem,4vw,6rem)] -translate-y-20 -rotate-2`}
           >
             Gone creative mode !
           </p>
         </div>
       </div>
-      <div className="bg-indigo-800 px-26 py-8">
-        <h2
-          className={`${mangoGrotesque.className} uppercase font-semibold text-4xl border-b-5 border-beige-custom`}
-        >
+      <div className="bg-linear-to-b from-black-custom/50 to-black-custom/90 h-100">
+        <h2 className="uppercase">Hey, I'm Dylan</h2>
+      </div>
+      <div className="bg-linear-to-b from-black-custom/90 to-20% to-black-custom pt-32">
+        <h2 className="text-migra text-lg border-b-4 border-beige-custom">
           Projects
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-8">
-          <Card className="h-90">
-            <Image
-              src="/images/AlgonquinTimes-solo.png"
-              alt="Algonquin Times App shown on a phone"
-              width={800}
-              height={600}
-              className="aspect-video object-cover w-full"
-            />
-            <CardHeader>
-              <CardTitle
-                className={`${mangoGrotesque.className} uppercase text-3xl font-semibold`}
-              >
-                Algonquin Times News App
-              </CardTitle>
-              <CardAction>
-                <Badge variant="secondary" className="bg-lime-600">
-                  Shipped
-                </Badge>
-              </CardAction>
-              <CardDescription className="text-black-custom">
-                Design Lead for the Algonquin Times News, an award winning app
-                recognized with 2nd place at the{" "}
-                <a href="" className="text-red-600 uppercase">
-                  Canadian Online Publishing Awards (COPA)
-                </a>
-                .
-              </CardDescription>
-            </CardHeader>
-          </Card>
-          <Card className="h-90">
-            <Image
-              src="/images/AlgonquinTimes-solo.png"
-              alt="Algonquin Times App shown on a phone"
-              width={800}
-              height={600}
-              className="aspect-video object-cover w-full"
-            />
-            <CardHeader>
-              <CardTitle
-                className={`${mangoGrotesque.className} uppercase text-3xl font-semibold`}
-              >
-                Bite Me
-              </CardTitle>
-              <CardAction>
-                <Badge variant="secondary">In-progress</Badge>
-              </CardAction>
-              <CardDescription className="text-black-custom">
-                Design Lead for the Algonquin Times News, an award winning app
-                recognized with 2nd place at the.
-              </CardDescription>
-            </CardHeader>
-          </Card>
-          <Card className="h-90">
-            <Image
-              src="/images/AlgonquinTimes-solo.png"
-              alt="Algonquin Times App shown on a phone"
-              width={800}
-              height={600}
-              className="aspect-video object-cover w-full"
-            />
-            <CardHeader>
-              <CardTitle
-                className={`${mangoGrotesque.className} uppercase text-3xl font-semibold`}
-              >
-                A La Cart
-              </CardTitle>
-              <CardAction>
-                <Badge variant="secondary">In-progress</Badge>
-              </CardAction>
-              <CardDescription className="text-black-custom">
-                Design Lead for the Algonquin Times News, an award winning app
-                recognized with 2nd place at the.
-              </CardDescription>
-            </CardHeader>
-          </Card>
+        <div className="flex flex-col items-center pt-32 gap-32">
+          <NeoCard title="Bite Me" description="Development" src="" link="/" />
+          <NeoCard
+            title="A La Cart"
+            description="Development"
+            src=""
+            link="/"
+            variant="option2"
+          />
+          <NeoCard
+            title="Algonquin Times News"
+            description="UX/UI Design"
+            src="/images/AlgonquinTimes-solo.png"
+            link="/"
+          />
         </div>
       </div>
-      <div>
-        <h2>Skills</h2>
+      <div className="py-36 flex gap-8 items-center justify-center w-full bg-linear-to-b from-black-custom from-40% to-black-custom/90 ">
+        <p className="text-migra text-lg">
+          Like what you see? Let's work together ;)
+        </p>
+        <Button>
+          <span>Say hi!</span>
+          <SendIcon />
+        </Button>
+      </div>
+      <div className="flex flex-row bg-linear-to-b from-black-custom/90 to-black-custom/50 py-8">
+        <h2 className="max-w-80">
+          New projects are kind of my favorite thing!
+        </h2>
       </div>
     </section>
   );
