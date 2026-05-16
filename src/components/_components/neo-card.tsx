@@ -20,7 +20,11 @@ export default function NeoCard({
   const isReversed = variant === "option2";
 
   return (
-    <div>
+    <div
+      className={`flex md:items-center flex-col md:flex-row gap-6 ${
+        isReversed ? "md:flex-row-reverse" : ""
+      }`}
+    >
       {/* TEXT */}
       <div className="flex flex-col order-2 md:order-1">
         <p className="text-3xl text-tusker font-semibold uppercase">{title}</p>

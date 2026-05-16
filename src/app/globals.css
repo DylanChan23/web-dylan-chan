@@ -203,6 +203,19 @@
   padding-right: 1.5rem;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 768px) {
   .side-margin {
     padding-left: 3rem;
