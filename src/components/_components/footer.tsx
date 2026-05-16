@@ -10,7 +10,7 @@ export default function Footer() {
       <Link
         href="https://www.linkedin.com/in/dylan-chan-a92b07271/"
         target="blank"
-        className="flex gap-1 items-center"
+        className="flex gap-1 items-center no-underline"
       >
         <span>LinkedIn</span>
         <LinkedinIcon className="h-4 w-4" />
@@ -18,12 +18,12 @@ export default function Footer() {
       <Link
         href="https://github.com/DylanChan23"
         target="blank"
-        className="flex gap-1 items-center"
+        className="flex gap-1 items-center no-underline"
       >
         <span>Github</span>
         <GithubIcon className="h-4 w-4" />
       </Link>
-      <Link href="/" className="flex gap-1 items-center">
+      <Link href="/" className="flex gap-1 items-center no-underline">
         <span>Email</span>
         <MailFilledIcon className="h-4 w-4" />
       </Link>

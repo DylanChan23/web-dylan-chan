@@ -136,6 +136,16 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-montreal);
@@ -172,6 +182,7 @@
     font-family: var(--font-montreal);
     font-size: var(--text-base);
     transition: color 0.2s ease;
+    text-decoration: underline;
   }
 
   a:hover {
@@ -203,19 +214,6 @@
   padding-right: 1.5rem;
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 @media (min-width: 768px) {
   .side-margin {
     padding-left: 3rem;
@@ -230,7 +228,7 @@
   }
 }
 
-#customCursor {
+/* #customCursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -245,4 +243,4 @@
     width 0.15s ease,
     height 0.15s ease,
     border-width 0.15s ease;
-}
+} */

@@ -20,7 +20,8 @@ export default function RootLayout({
       <body
         className={`${montreal.variable} ${tusker.variable} ${lore.variable} ${migra.variable} min-h-screen`}
       >
-        <div id="customCursor" />
+        {/* <div id="customCursor" /> */}
+        <div />
         <LiquidBackground />
         <Header />
         {children}

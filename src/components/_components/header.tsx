@@ -39,17 +39,23 @@ export default function Header() {
       }`}
     >
       <div className="flex justify-between items-center">
-        <Link href="/">
+        <Link href="/" className="no-underline">
           <span className="text-migra">Dylan Chan</span>
         </Link>
 
         <div className="flex gap-8">
-          <Link href="/projects" className="flex gap-1 items-center">
+          <Link
+            href="/projects"
+            className="flex gap-1 items-center  no-underline"
+          >
             <span>projects</span>
             <BananaIcon className="h-4 w-4" />
           </Link>
 
-          <Link href="/contact" className="flex gap-1 items-center">
+          <Link
+            href="/contact"
+            className="flex gap-1 items-center no-underline"
+          >
             <span>contact</span>
             <SendIcon className="h-4 w-4" />
           </Link>
