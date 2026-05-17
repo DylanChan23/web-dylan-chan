@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import SendIcon from "../icons/send-icon";
 import BananaIcon from "../icons/banana-icon";
+import { usePathname, useRouter } from "next/navigation";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 
 export default function Header() {
   const [scrollUp, setScrollUp] = useState(true);
@@ -32,6 +34,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const pathname = usePathname();
+  const router = useRouter();
+
   return (
     <header
       className={`fixed top-0 py-2 px-8 z-20 w-full bg-background/40 transition-transform duration-300 ${
@@ -45,10 +50,30 @@ export default function Header() {
 
         <div className="flex gap-8">
           <Link
-            href="/projects"
-            className="flex gap-1 items-center  no-underline"
+            href="/#projects"
+            onClick={(e) => {
+              e.preventDefault();
+
+              const scrollToProjects = () => {
+                const smoother = ScrollSmoother.get();
+
+                smoother?.scrollTo("#projects", true);
+              };
+
+              if (pathname === "/") {
+                scrollToProjects();
+              } else {
+                router.push("/");
+
+                setTimeout(() => {
+                  scrollToProjects();
+                }, 150);
+              }
+            }}
+            className="flex gap-1 items-center no-underline"
           >
             <span>projects</span>
+
             <BananaIcon className="h-4 w-4" />
           </Link>
 

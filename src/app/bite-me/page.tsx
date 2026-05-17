@@ -16,12 +16,12 @@ export default function BiteMe() {
           alt="placeholder image"
           width={700}
           height={300}
-          className="object-cover w-full h-full min-h-60 pt-11.25 bg-black-custom"
+          className="object-cover w-full h-full min-h-60 pt-11.25 bg-black-custom/90"
         />
-        <div className="p-20 flex flex-col gap-8 bg-black-custom">
+        <div className="p-20 flex flex-col gap-8 bg-black-custom/90">
           <div className="w-full flex justify-between">
             <h1 className="uppercase">Bite Me</h1>
-            <Badge className="bg-orange-400">In-progress</Badge>
+            <Badge className="bg-orange-400/70">In-progress</Badge>
           </div>
           <p>
             A modern full-stack SaaS dashboard built with a scalable monorepo
@@ -55,7 +55,7 @@ export default function BiteMe() {
           </div>
         </div>
       </div>
-      <div className="side-margin py-45 bg-linear-to-b from-black-custom to-black-custom/60">
+      <div className="side-margin py-45 bg-linear-to-b from-black-custom/90 to-black-custom/60">
         <h2 className="text-montreal font-normal text-lg pb-10">Tech Stack</h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
