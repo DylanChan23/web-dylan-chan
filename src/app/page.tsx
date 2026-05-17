@@ -48,10 +48,10 @@ export default function Home() {
           <h2 className="text-migra text-lg">Projects</h2>
           <div className="flex flex-col items-center pt-20 gap-32">
             <NeoCard
-              title="Bite Me"
+              title="Byte Me"
               description="Development"
               src=""
-              link="/bite-me"
+              link="/byte-me"
             />
             <NeoCard
               title="A La Cart"
