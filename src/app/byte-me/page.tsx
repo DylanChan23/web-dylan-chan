@@ -37,7 +37,7 @@ export default function ByteMe() {
             project for the storefront side experience.
           </p>
           <div className="flex gap-8">
-            <Link href="https://byte-me-dylanchan23.vercel.app" target="blank">
+            <Link href="https://byte-me-dylanchan.dev" target="blank">
               <Button className="w-fit bg-beige-custom">
                 <p>demo</p>
                 <ExternalLinkIcon />
