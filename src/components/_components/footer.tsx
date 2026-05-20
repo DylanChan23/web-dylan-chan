@@ -23,7 +23,10 @@ export default function Footer() {
         <span>Github</span>
         <GithubIcon className="h-4 w-4" />
       </Link>
-      <Link href="/" className="flex gap-1 items-center no-underline">
+      <Link
+        href="mailto:dylanchan23@gmail.com"
+        className="flex gap-1 items-center no-underline"
+      >
         <span>Email</span>
         <MailFilledIcon className="h-4 w-4" />
       </Link>

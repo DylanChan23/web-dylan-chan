@@ -78,7 +78,7 @@ export default function Header() {
           </Link>
 
           <Link
-            href="/contact"
+            href="mailto:dylanchan23@gmail.com"
             className="flex gap-1 items-center no-underline"
           >
             <span>contact</span>
