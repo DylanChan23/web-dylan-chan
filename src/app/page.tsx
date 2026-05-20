@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="w-screen h-full">
+    <section className="w-screen h-fit">
       <div className="bg-linear-to-b from-black-custom/0 from-10% via-black-custom/90 to-black-custom/0">
         {/* Hero */}
         <div className="w-full h-screen flex items-center justify-center">
