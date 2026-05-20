@@ -6,7 +6,7 @@ import LinkedinIcon from "../icons/linkedin-icon";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 w-full z-20">
+    <footer className="w-full z-20">
       <div className="flex items-center justify-center gap-8 py-4 px-8 w-full bg-background/40">
         <Link
           href="https://www.linkedin.com/in/dylan-chan-a92b07271/"
