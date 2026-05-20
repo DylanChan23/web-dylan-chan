@@ -1,6 +1,10 @@
+import BrandVercelIcon from "@/components/icons/brand-vercel-icon";
 import ExternalLinkIcon from "@/components/icons/external-link-icon";
+import FlameIcon from "@/components/icons/flame-icon";
 import GithubIcon from "@/components/icons/github-icon";
 import LockIcon from "@/components/icons/lock-icon";
+import PenIcon from "@/components/icons/pen-icon";
+import RefreshIcon from "@/components/icons/refresh-icon";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
@@ -103,19 +107,19 @@ export default function Page() {
               Product image storage migrated from local uploads to Vercel Blob
               (production-safe)
             </CardTitle>
-            <LockIcon className="h-8 w-8 text-beige-custom" />
+            <BrandVercelIcon className="h-8 w-8 text-beige-custom" />
           </Card>
           <Card className="flex flex-row justify-between p-4 items-center bg-beige-custom/20">
             <CardTitle className="text-sm font-semibold text-beige-custom">
               Monorepo architecture with shared UI, DB, and auth packages
             </CardTitle>
-            <LockIcon className="h-8 w-8 text-beige-custom" />
+            <RefreshIcon className="h-7 w-7 font-black text-beige-custom" />
           </Card>
           <Card className="flex flex-row justify-between p-4 items-center bg-beige-custom/20">
             <CardTitle className="text-sm font-semibold text-beige-custom">
               TurboRepo caching for optimized CI and incremental builds
             </CardTitle>
-            <LockIcon className="h-8 w-8 text-beige-custom" />
+            <FlameIcon className="h-8 w-8 text-beige-custom" />
           </Card>
         </div>
       </div>

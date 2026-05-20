@@ -1,6 +1,10 @@
+import BrandVercelIcon from "@/components/icons/brand-vercel-icon";
+import CartIcon from "@/components/icons/cart-icon";
 import ExternalLinkIcon from "@/components/icons/external-link-icon";
 import GithubIcon from "@/components/icons/github-icon";
 import LockIcon from "@/components/icons/lock-icon";
+import RefreshIcon from "@/components/icons/refresh-icon";
+import RocketIcon from "@/components/icons/rocket-icon";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
@@ -93,27 +97,27 @@ export default function Page() {
               Customer-facing product catalog UI built for browsing and
               discovery
             </CardTitle>
-            <LockIcon className="h-8 w-8 text-beige-custom" />
+            <RocketIcon className="h-6 w-6 text-beige-custom" />
           </Card>
           <Card className="flex flex-row justify-between p-4 items-center bg-beige-custom/20">
             <CardTitle className="text-sm font-semibold text-beige-custom">
               Shared backend with Byte Me dashboard (single source of product
               data)
             </CardTitle>
-            <LockIcon className="h-8 w-8 text-beige-custom" />
+            <RefreshIcon className="h-8 w-8 text-beige-custom" />
           </Card>
           <Card className="flex flex-row justify-between p-4 items-center bg-beige-custom/20">
             <CardTitle className="text-sm font-semibold text-beige-custom">
               Optimized image delivery via Vercel Blob for fast storefront
               rendering
             </CardTitle>
-            <LockIcon className="h-8 w-8 text-beige-custom" />
+            <BrandVercelIcon className="h-8 w-8 text-beige-custom" />
           </Card>
           <Card className="flex flex-row justify-between p-4 items-center bg-beige-custom/20">
             <CardTitle className="text-sm font-semibold text-beige-custom">
               Clean UI system designed for e-commerce-style interaction flow
             </CardTitle>
-            <LockIcon className="h-8 w-8 text-beige-custom" />
+            <CartIcon className="h-8 w-8 text-beige-custom" />
           </Card>
         </div>
       </div>
