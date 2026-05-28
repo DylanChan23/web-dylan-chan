@@ -12,11 +12,11 @@ export default function Home() {
         {/* Hero */}
         <div className="w-full h-screen flex items-center justify-center">
           <div className="flex flex-col items-center">
-            <p
+            <h1
               className={`${tusker.className} text-center text-[clamp(5rem,7vw,10rem)] font-semibold text-beige-custom uppercase`}
             >
               Frontend Developer
-            </p>
+            </h1>
             <p
               className={`${lore.className} -mt-2 text-center text-[clamp(2rem,3vw,4rem)] -rotate-4`}
             >
@@ -81,49 +81,109 @@ export default function Home() {
               experiences.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="Accessibility (WCAG)"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 Accessibility (WCAG)
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="CSS"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 CSS
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label=" Figma"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 Figma
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label=" Git"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 Git
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="GitHub"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 GitHub
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="HTML5"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 HTML5
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="JavaScript"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 JavaScript
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="Next.js"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 Next.js
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label=" React"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 React
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="React Native"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 React Native
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="REST APIs"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 REST APIs
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="Responsive Design"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 Responsive Design
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label="Tailwind CSS"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 Tailwind CSS
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label=" TypeScript"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 TypeScript
               </Button>
-              <Button variant="outline" className="whitespace-nowrap">
+              <Button
+                aria-label=" Vercel"
+                variant="outline"
+                className="whitespace-nowrap"
+              >
                 Vercel
               </Button>
             </div>

@@ -17,7 +17,7 @@ export default function Page() {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center">
         <Image
           src="/images/a-la-cart-img.png"
-          alt="A La Cart image"
+          alt="A La Cart website screenshot"
           width={700}
           height={300}
           className="object-cover w-full h-full"

@@ -27,7 +27,9 @@ export default function NeoCard({
     >
       {/* TEXT */}
       <div className="flex flex-col order-2 md:order-1">
-        <p className="text-3xl text-tusker font-semibold uppercase">{title}</p>
+        <h3 className="text-3xl text-tusker font-semibold uppercase">
+          {title}
+        </h3>
         <p className="uppercase">{description}</p>
       </div>
 

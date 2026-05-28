@@ -12,7 +12,7 @@ export default function Page() {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center">
         <Image
           src="/images/algonquin-times-img.png"
-          alt="A La Cart image"
+          alt="Algonquin Times News App image"
           width={700}
           height={300}
           className="object-cover w-full h-full"
