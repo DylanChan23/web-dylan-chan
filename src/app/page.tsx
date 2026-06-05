@@ -117,10 +117,10 @@ export default function Home() {
         </section>
         {/* Contact */}
         <section
-          className="pb-40 flex gap-8 items-center justify-center w-full side-margin"
+          className="pb-40 flex flex-col gap-4 items-center justify-center w-full side-margin"
           aria-labelledby="contact-title"
         >
-          <span id="contact-title" className="text-migra text-lg">
+          <span id="contact-title" className="text-lore text-lg">
             Lets work together!
           </span>
           <a href="mailto:dylanchan23@gmail.com">
