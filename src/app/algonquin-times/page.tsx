@@ -1,5 +1,4 @@
 import ExternalLinkIcon from "@/components/icons/external-link-icon";
-import GithubIcon from "@/components/icons/github-icon";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
@@ -8,8 +7,8 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="bg-linear-to-b from-black-custom from-30% to-black-custom/60 h-full w-screen flex flex-col gap-40 pb-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+    <main className="bg-linear-to-b from-black-custom from-30% to-black-custom/60 h-full w-screen flex flex-col gap-40 pb-20">
+      <header className="grid grid-cols-1 md:grid-cols-2 items-center">
         <Image
           src="/images/algonquin-times-img.png"
           alt="Algonquin Times News App image"
@@ -19,7 +18,10 @@ export default function Page() {
         />
         <div className="p-20 flex flex-col gap-8">
           <div className="w-full flex justify-between">
-            <h1>Algonquin Times News App</h1>
+            <h1>
+              Algonquin Times News App{" "}
+              <span className="text-lore text-lg">- Case Study</span>
+            </h1>
             <Badge className="bg-lime-400/70">Live</Badge>
           </div>
           <p>
@@ -34,49 +36,55 @@ export default function Page() {
             <a
               href="https://canadianonlinepublishingawards.com/2025/winners"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1"
             >
               Canadian Online Publishing Awards 2025 (COPA)
-              <ExternalLinkIcon className="h-4 w-4" />
+              <ExternalLinkIcon className="h-4 w-4" aria-hidden="true" />
             </a>{" "}
             for excellence in digital publishing and user experience.
           </p>
           <div className="flex gap-8">
-            <Link
+            <a
               href="https://algonquintimes.com/download-app/"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Button className="w-fit bg-beige-custom">
                 <p>download now</p>
                 <ExternalLinkIcon />
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
-      </div>
-      <div className="side-margin grid grid-cols-1 md:grid-cols-2 gap-8">
+      </header>
+      <section className="side-margin grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="bg-black-custom/60 text-beige-custom p-4 text-center">
           <CardTitle className="uppercase">Focus Areas</CardTitle>
-          <CardContent className="flex gap-4 flex-wrap">
-            <Button variant="outline">UX/UI Design</Button>
-            <Button variant="outline">Mobile Experience</Button>
-            <Button variant="outline">Content Discovery</Button>
-            <Button variant="outline">Accessibility</Button>
+          <CardContent className="flex justify-center">
+            <ul className="flex flex-wrap gap-3">
+              <li className="bubble">UX/UI Design</li>
+              <li className="bubble">Mobile Experience</li>
+              <li className="bubble">Content Discovery</li>
+              <li className="bubble">Accessibility</li>
+            </ul>
           </CardContent>
         </Card>
         <Card className="bg-black-custom/60 text-beige-custom p-4 text-center">
           <CardTitle className="uppercase">Project Highlights</CardTitle>
-          <CardContent className="flex gap-4 flex-wrap">
-            <Button variant="outline">Award-winning Design</Button>
-            <Button variant="outline">Campus Journalism</Button>
-            <Button variant="outline">User-centered UX</Button>
-            <Button variant="outline">Mobile-first Thinking</Button>
+          <CardContent className="flex justify-center">
+            <ul className="flex flex-wrap gap-3">
+              <li className="bubble">Award-winning Design</li>
+              <li className="bubble">Campus Journalism</li>
+              <li className="bubble">User-centered UX</li>
+              <li className="bubble">Mobile-first Thinking</li>
+            </ul>
           </CardContent>
         </Card>
-      </div>
+      </section>
       <div className="side-margin text-center">
         <h2 className="text-muted-foreground">Case Study coming soon ...</h2>
       </div>
-    </div>
+    </main>
   );
 }

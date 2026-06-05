@@ -498,6 +498,19 @@ class App {
   }
 
   init() {
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (reduceMotion) {
+      this.gradientBackground.init();
+      this.setColorScheme();
+      this.isFrozen = true;
+      this.gradientBackground.uniforms.uSpeed.value = 0.0;
+      this.render();
+      return;
+    }
+
     console.log("[GradientBackground] init()");
     this.gradientBackground.init();
     // Apply Scheme 1 settings on startup
@@ -555,6 +568,8 @@ class App {
   }
 
   update(delta) {
+    if (this.isFrozen) return;
+
     this.touchTexture.update();
     this.gradientBackground.update(delta);
   }
@@ -568,6 +583,8 @@ class App {
   }
 
   tick() {
+    if (this.isFrozen) return;
+
     this.render();
     // Use arrow function to maintain context and ensure continuous rendering
     requestAnimationFrame(() => this.tick());

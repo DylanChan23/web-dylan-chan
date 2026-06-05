@@ -3,31 +3,36 @@ import NeoCard from "@/components/_components/neo-card";
 import { Button } from "@/components/ui/button";
 import SendIcon from "@/components/icons/send-icon";
 import Footer from "@/components/_components/footer";
-import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="w-screen h-fit">
+    <main id="main-content" className="w-screen h-fit">
       <div className="bg-linear-to-b from-black-custom/0 from-10% via-black-custom/90 to-black-custom/0">
         {/* Hero */}
-        <div className="w-full h-screen flex items-center justify-center">
+        <header className="w-full h-screen flex items-center justify-center">
           <div className="flex flex-col items-center">
-            <h1
+            <h1 className="sr-only">Dylan Chan's Portfolio</h1>
+            <span
               className={`${tusker.className} text-center text-[clamp(5rem,7vw,10rem)] font-semibold text-beige-custom uppercase`}
             >
               Frontend Developer
-            </h1>
-            <p
+            </span>
+            <span
               className={`${lore.className} -mt-2 text-center text-[clamp(2rem,3vw,4rem)] -rotate-4`}
             >
               Gone creative mode !
-            </p>
+            </span>
           </div>
-        </div>
+        </header>
         {/* About Me */}
-        <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 items-stretch side-margin">
+        <section
+          className="gap-8 grid grid-cols-1 sm:grid-cols-2 items-stretch side-margin"
+          aria-labelledby="about-title"
+        >
           <div className="flex flex-col gap-8">
-            <h2 className="uppercase">Hey, I'm Dylan</h2>
+            <h2 id="about-title" className="uppercase">
+              Hey, I&apos;m Dylan
+            </h2>
             <p>
               I’m a frontend developer who loves blending clean development with
               bold, creative visuals.
@@ -39,13 +44,14 @@ export default function Home() {
               people can actually feel when they use it.
             </p>
           </div>
-        </div>
+        </section>
         {/* Projects */}
-        <div
+        <section
           id="projects"
           className=" py-60 side-margin bg-linear-to-b from-black-custom/0 via-black-custom/90 to-black-custom/0"
+          aria-labelledby="projects-title"
         >
-          <h2 className="text-migra text-lg">Projects</h2>
+          <h2 id="projects-title">Projects</h2>
           <div className="flex flex-col items-center pt-20 gap-32">
             <NeoCard
               title="Byte Me"
@@ -67,140 +73,65 @@ export default function Home() {
               link="/algonquin-times"
             />
           </div>
-        </div>
+        </section>
         {/* Skills */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pb-50 items-start side-margin">
+        <section
+          className="grid grid-cols-1 sm:grid-cols-2 gap-10 pb-50 items-start side-margin"
+          aria-labelledby="skills-title"
+        >
           <div className="space-y-4">
-            <h2 className="max-w-prose">
-              New projects are kind of my favorite thing — let’s make it happen!
+            <h2 id="skills-title" className="max-w-prose">
+              Skills
             </h2>
+            <p className="max-w-prose text-xl">
+              New projects are kind of my favorite thing — let’s make it happen!
+            </p>
           </div>
           <div className="flex flex-col gap-8">
             <p className="text-sm uppercase max-w-prose">
               I enjoy working across frontend, design systems, and interactive
               experiences.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Button
-                aria-label="Accessibility (WCAG)"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                Accessibility (WCAG)
-              </Button>
-              <Button
-                aria-label="CSS"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                CSS
-              </Button>
-              <Button
-                aria-label=" Figma"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                Figma
-              </Button>
-              <Button
-                aria-label=" Git"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                Git
-              </Button>
-              <Button
-                aria-label="GitHub"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                GitHub
-              </Button>
-              <Button
-                aria-label="HTML5"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                HTML5
-              </Button>
-              <Button
-                aria-label="JavaScript"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                JavaScript
-              </Button>
-              <Button
-                aria-label="Next.js"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                Next.js
-              </Button>
-              <Button
-                aria-label=" React"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                React
-              </Button>
-              <Button
-                aria-label="React Native"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                React Native
-              </Button>
-              <Button
-                aria-label="REST APIs"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                REST APIs
-              </Button>
-              <Button
-                aria-label="Responsive Design"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                Responsive Design
-              </Button>
-              <Button
-                aria-label="Tailwind CSS"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                Tailwind CSS
-              </Button>
-              <Button
-                aria-label=" TypeScript"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                TypeScript
-              </Button>
-              <Button
-                aria-label=" Vercel"
-                variant="outline"
-                className="whitespace-nowrap"
-              >
-                Vercel
-              </Button>
-            </div>
+            <ul className="flex flex-wrap gap-3">
+              <li className="bubble">Adobe Illustrator</li>
+              <li className="bubble">ARIA</li>
+              <li className="bubble">Bilingual (EN/FR)</li>
+              <li className="bubble">CSS</li>
+              <li className="bubble">Design systems</li>
+              <li className="bubble">Figma</li>
+              <li className="bubble">Git</li>
+              <li className="bubble">HTML5</li>
+              <li className="bubble">Javascript</li>
+              <li className="bubble">Next.js</li>
+              <li className="bubble">React</li>
+              <li className="bubble">Semantic HTML</li>
+              <li className="bubble">SVN</li>
+              <li className="bubble">Tailwind CSS</li>
+              <li className="bubble">TypeScript</li>
+              <li className="bubble">UI design</li>
+              <li className="bubble">Usability testing</li>
+              <li className="bubble">UX principles</li>
+              <li className="bubble">WCAG</li>
+            </ul>
           </div>
-        </div>
+        </section>
         {/* Contact */}
-        <div className="pb-40 flex gap-8 items-center justify-center w-full side-margin">
-          <p className="text-migra text-lg">Lets work together!</p>
-          <Link href="mailto:dylanchan23@gmail.com">
+        <section
+          className="pb-40 flex gap-8 items-center justify-center w-full side-margin"
+          aria-labelledby="contact-title"
+        >
+          <span id="contact-title" className="text-migra text-lg">
+            Lets work together!
+          </span>
+          <a href="mailto:dylanchan23@gmail.com">
             <Button>
               <span>Say hi!</span>
               <SendIcon />
             </Button>
-          </Link>
-        </div>
+          </a>
+        </section>
       </div>
       <Footer />
-    </section>
+    </main>
   );
 }
