@@ -11,7 +11,7 @@ export default function Home() {
         {/* Hero */}
         <header className="w-full h-screen flex items-center justify-center">
           <div className="flex flex-col items-center">
-            <h1 className="sr-only">Dylan Chan's Portfolio</h1>
+            <h1 className="sr-only">Dylan Chan&apos;s Portfolio</h1>
             <span
               className={`${tusker.className} text-center text-[clamp(5rem,7vw,10rem)] font-semibold text-beige-custom uppercase`}
             >
@@ -78,6 +78,7 @@ export default function Home() {
         <section
           className="grid grid-cols-1 sm:grid-cols-2 gap-10 pb-50 items-start side-margin"
           aria-labelledby="skills-title"
+          role="region"
         >
           <div className="space-y-4">
             <h2 id="skills-title" className="max-w-prose">

@@ -3,11 +3,13 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="bg-linear-to-b from-black-custom from-30% to-black-custom/60 h-full w-screen flex flex-col gap-40 pb-20">
+    <main
+      id="main-content"
+      className="bg-linear-to-b from-black-custom from-30% to-black-custom/60 h-full w-screen flex flex-col gap-40 pb-20"
+    >
       <header className="grid grid-cols-1 md:grid-cols-2 items-center">
         <Image
           src="/images/algonquin-times-img.png"

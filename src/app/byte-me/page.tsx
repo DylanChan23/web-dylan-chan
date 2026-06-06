@@ -11,7 +11,10 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="w-screen h-full bg-linear-to-b from-black-custom from-30% to-black-custom/60 flex flex-col gap-40 pb-20">
+    <main
+      id="main-content"
+      className="w-screen h-full bg-linear-to-b from-black-custom from-30% to-black-custom/60 flex flex-col gap-40 pb-20"
+    >
       <header className="grid grid-cols-1 md:grid-cols-2 items-center">
         <Image
           src="/images/byte-me-img.png"
